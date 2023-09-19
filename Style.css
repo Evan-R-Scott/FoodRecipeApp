@@ -1,25 +1,31 @@
 *{
-	box-sizing: border-box;
   margin: 0px;
-}
-
-.mainSection, .resultsSection, .aboutSection, .historySection {
-  background-color: #181818;
+  padding: 0px;
   text-align: center;
 }
 
+body {
+  height: 2000px;
+  background-color: #181818;
+}
+
 .navBar {
+  position: fixed;
+  top: 0;
+  right: 0;
   background-color: #080808;
   overflow: hidden;
+  position: absolute;
+  width: 100%;
 }
 
 .navBar a {
   float: right;
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  text-transform: uppercase;
 }
 
 .navBar a:hover {
@@ -32,36 +38,103 @@
   color: #ddd;
 }
 
+.navBar .siteName{
+  color: #AA336A;
+  font-size: 17px;
+  font-weight: bold;
+  float: left;
+  padding: 14px 16px;
+}
+
 h1 {
-  font-size: 65px;
+  position: absolute;
+  font-size: 75px;
   font-family: Pacifico, 'Times New Roman', Arial;
   color: 	#AA336A;
+  top: 10%;
+  width: 100%;
 }
 
 h2, h3 {
   font-size: 45px;
-  text-align: center;
   color: #ddd;
 }
 
 h4{
+  position: absolute;
   font-size: 20px;
-  text-align: center;
   color: #ddd;
+  top: 35%;
+  width: 100%;
 }
 
-#recipe-search-box{
+.recipe-search-box{
+  position: absolute;
   width: 400px;
+  height: 30px;
+  margin: 20px;
+  font-size: 17px;
+  top: 50%;
+  transform: translateX(-50%);
+  text-align: left;
 }
 
 .search-box {
+  position: absolute;
   width: 200px;
+  height: 30px;
+  font-size: 17px;
+  top: 70%;
+  transform: translateX(30%);
 }
 
-label {
+.ingredient-search-box {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  top: 70%;
+  transform: translateX(-110%);
+  text-align: left;
+}
+
+label{
   color: #ddd;
+}
+
+button {
+  position: absolute;
+  height: 30px;
+  font-size: 17px;
+  transform: translateX(-50%);
+  top: 80%;
 }
 
 p {
   color: #ddd;
+}
+
+.button {
+  width: 200px;
+  text-align: center;
+  margin: 20px;
+  background-color:#AA336A;
+  color: #ddd;
+}
+
+.resultsSection {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.aboutSection {
+  position: absolute;
+  top: 200%;
+  width: 100%;
+}
+
+.historySection {
+  position: absolute;
+  top: 250%;
+  width: 100%;
 }

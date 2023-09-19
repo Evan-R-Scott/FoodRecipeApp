@@ -17,40 +17,50 @@
     <a href = "#about">About</a>
     <a href = "#search-results">Recipes</a>
     <a href = "#home">Home</a>
+    <label class = "siteName">Dish Discovery</label>
   </nav>
+  <section class = "allSections">
+    <section class = "mainSection">
+      <h1 id="home">Dish Discovery</h1>
 
-  <section class = "mainSection">
-    <h1 id="home">Dish Discovery</h1>
+      <h4>Search recipes from all over the world</h4>
 
-    <h4>Search recipes from all over the world</h4>
-
-    <section class = "searchSection">
-      <input class = "search-box" type = "text" placeholder="Enter a recipe"><br>
-      <label for = ingredients>Exclude Ingredients</label>
-      <input name = "ingredients" id = "ingredient-search-box" type = "text" placeholder="Coconut, Onion, Garlic">
-      <label for = "diet">Diet</label>
-      <select class = "search-box" name = "diet">
-        <option value = "none">None</option>
-        <option value = "vegan">Vegan</option>
-        <option value = "vegetarian">Vegetarian</option>
-      </select>
+      <section class = "searchSection">
+        <form action ="">
+          <input class = "recipe-search-box" type = "text" placeholder="Enter a recipe">
+          <br>
+          <br>
+          <label for = "ingredients">Exclude Ingredients:</label>
+          <input name = "ingredients" class = "ingredient-search-box" type = "text" placeholder="Coconut, Onion, Garlic">
+          <br>
+          <br>
+          <label for = "diet">Diet:</label>
+          <select class = "search-box" name = "diet">
+            <option value = "none">None</option>
+            <option value = "vegan">Vegan</option>
+            <option value = "vegetarian">Vegetarian</option>
+          </select>
+          <br>
+          <br>
+          <input class = "button" type = "submit" value = "Submit">
+        </form>
+      </section>
     </section>
-  </section>
+    <section class = "resultsSection">
+      <h2 id = "search-results">Recipes</h2>
 
-  <section class = "resultsSection">
-    <h2 id = "search-results">Recipes</h2>
+      <h4>Your top results!</h4>
+    </section>
 
-    <h4>Your top results!</h4>
-  </section>
+    <section class = "aboutSection">
+      <h2 id = "about">About</h2>
+    </section>
 
-  <section class = "aboutSection">
-    <h2 id = "about">About</h2>
-  </section>
+    <section class = "historySection">
+      <h2 id = "history">Previous Recipes</h2>
 
-  <section class = "historySection">
-    <h2 id = "history">Previous Recipes</h2>
-
-    <p>You currently have <em>0</em> previously searched recipes</p>
+      <p>You currently have <em>0</em> previously searched recipes</p>
+    </section>
   </section>
 
 </body>
