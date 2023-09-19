@@ -3,25 +3,13 @@
   margin: 0px;
 }
 
-.mainSection {
-  background-color: #72A0C1;
+.mainSection, .resultsSection, .aboutSection, .historySection {
+  background-color: #181818;
   text-align: center;
 }
 
-.resultsSection {
-  background-color: #5072A7;
-}
-
-.aboutSection {
-  background-color: #72A0C1;
-}
-
-.historySection {
-  background-color: #D3D3D3;
-}
-
 .navBar {
-  background-color: #333;
+  background-color: #080808;
   overflow: hidden;
 }
 
@@ -40,33 +28,40 @@
 }
 
 .navBar a:active {
-  background-color: #04AA6D;
+  background-color: #AA336A;
   color: #ddd;
 }
 
 h1 {
-  font-size: 0px;
+  font-size: 65px;
   font-family: Pacifico, 'Times New Roman', Arial;
-}
-
-h1:before{
-  content:'Dish ';
-  color:#000;
-  font-size: 60px;
-}
-
-h1:after{
-  content:'Discovery';
-  color: #ddd;
-  font-size: 60px;
+  color: 	#AA336A;
 }
 
 h2, h3 {
   font-size: 45px;
   text-align: center;
+  color: #ddd;
 }
 
 h4{
   font-size: 20px;
   text-align: center;
+  color: #ddd;
+}
+
+#recipe-search-box{
+  width: 400px;
+}
+
+.search-box {
+  width: 200px;
+}
+
+label {
+  color: #ddd;
+}
+
+p {
+  color: #ddd;
 }

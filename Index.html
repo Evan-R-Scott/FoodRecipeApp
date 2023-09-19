@@ -22,13 +22,25 @@
   <section class = "mainSection">
     <h1 id="home">Dish Discovery</h1>
 
-    <input type = "text" placeholder="Search">
+    <h4>Search recipes from all over the world</h4>
+
+    <section class = "searchSection">
+      <input class = "search-box" type = "text" placeholder="Enter a recipe"><br>
+      <label for = ingredients>Exclude Ingredients</label>
+      <input name = "ingredients" id = "ingredient-search-box" type = "text" placeholder="Coconut, Onion, Garlic">
+      <label for = "diet">Diet</label>
+      <select class = "search-box" name = "diet">
+        <option value = "none">None</option>
+        <option value = "vegan">Vegan</option>
+        <option value = "vegetarian">Vegetarian</option>
+      </select>
+    </section>
   </section>
 
   <section class = "resultsSection">
     <h2 id = "search-results">Recipes</h2>
 
-    <h4>Your top 3 recipe results have arrived!</h4>
+    <h4>Your top results!</h4>
   </section>
 
   <section class = "aboutSection">
