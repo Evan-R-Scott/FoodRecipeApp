@@ -42,7 +42,6 @@ nav .siteName{
 section {
   width: 100%;
   min-height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #181818;
@@ -53,10 +52,14 @@ section {
 #home {
   position: relative;
   min-height: 90vh;
+}
+
+h1 {
+  position: relative;
   font-size: 75px;
   font-family: Pacifico, 'Times New Roman', Arial;
   color: 	#AA336A;
-  top: 0;
+  top: 150px;
 }
 
 h2 {
@@ -93,7 +96,7 @@ h4{
 
 .searchSection .recipe-search-box{
   position: relative;
-  width: 100%;
+  width: 35%;
   height: 30px;
   font-size: 17px;
   top: 80px;
@@ -124,6 +127,8 @@ label{
 p, li {
   color: #ddd;
   font-size: 17px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .button {
@@ -133,5 +138,11 @@ p, li {
   text-align: center;
   margin: 20px;
   background-color:#AA336A;
+  color: #ddd;
+}
+
+footer {
+  min-height: 20vh;
+  background-color: #AA336A;
   color: #ddd;
 }
