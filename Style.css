@@ -46,16 +46,41 @@ section {
   justify-content: center;
   align-items: center;
   background-color: #181818;
-  color: #ddd;
+  color: #AA336A;
   font-size: 45px;
 }
 
 #home {
   position: relative;
+  min-height: 90vh;
   font-size: 75px;
   font-family: Pacifico, 'Times New Roman', Arial;
   color: 	#AA336A;
   top: 0;
+}
+
+h2 {
+  display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+h2::before, h2::after {
+  content: '';
+	border-top: 2px solid;
+	margin: 0 20px 0 0;
+	flex: 1 0 20px;
+	color: #AA336A;
+}
+
+h2::after {
+  margin: 0 0 0 20px;
+}
+
+h3 {
+  color: #ddd;
+  font-size: 20px;
 }
 
 h4{
@@ -96,9 +121,9 @@ label{
   color: #ddd;
 }
 
-p {
+p, li {
   color: #ddd;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .button {
