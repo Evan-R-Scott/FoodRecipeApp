@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //api key, html form with inputs and result initialized
+
+  //Enter unique API Key here 
   const apiKey = "<ENTER API KEY HERE>";
+
+   //html form with inputs and result initialized
   const form = document.getElementById("searchForm");
   const results = document.getElementById("search-results");
   const resultBoxContainer = document.querySelector(".result-box-container");
@@ -49,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const noRecipesMessage = document.getElementById("noRecipesMessage");
 
   function displayResults(recipes) {
-    
+
     // Clear previous results and initialize boxes for result display
     resultBoxContainer.innerHTML = "";
     const numberOfBoxes = 3;
