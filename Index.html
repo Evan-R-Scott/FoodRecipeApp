@@ -8,10 +8,10 @@
   <title>Dish Discovery</title>
   <link rel="stylesheet" href="Style.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Space+Mono&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
+  <!-- Navigation bar-->
   <nav>
     <a href = "#search-results">Recipes</a>
     <a href = "#about">About</a>
@@ -20,65 +20,73 @@
     <label class = "siteName">Dish Discovery</label>
   </nav>
 
-    <section id = "home">
-      <h1>Dish Discovery</h1>
+  <!-- Home/Main Section-->
+  <section id = "home">
+    <h1>Dish Discovery</h1>
 
-      <h4>Search recipes from all over the world</h4>
-    </section>
+    <h4>Search recipes from all over the world</h4>
+  </section>
 
-    <section id = "searchSection">
+  <!-- Discovery Section-->
+  <section id = "searchSection">
+    <br>
+    <h2>Discover</h2>
+    <!-- Form to be submitted to API for recipe results-->
+    <form id = "searchForm">
+      <input id = "recipe-search-box" type = "text" placeholder="Enter a recipe or ingredient">
       <br>
-      <h2>Discover</h2>
-      <form id = "searchForm">
-        <input id = "recipe-search-box" type = "text" placeholder="Enter a recipe or ingredient">
-        <br>
-        <br>
-        <label for = "ingredients">Exclude Ingredient:</label>
-        <input name = "ingredients" id = "ingredient-search-box" type = "text" placeholder="Coconut, Onion, Garlic">
-        <br>
-        <br>
-        <label for = "diet">Diet:</label>
-        <select id = "search-box" name = "diet">
-          <option value = "none">None</option>
-          <option value = "vegan">Vegan</option>
-          <option value = "vegetarian">Vegetarian</option>
-        </select>
-        <br>
-        <br>
-        <input class = "button" type = "submit" value = "Search Recipes">
-      </form>
-    </section>
+      <br>
+      <label for = "ingredients">Exclude Ingredient:</label>
+      <input name = "ingredients" id = "ingredient-search-box" type = "text" placeholder="Coconut, Onion, Garlic">
+      <br>
+      <br>
+      <label for = "diet">Diet:</label>
+      <select id = "search-box" name = "diet">
+        <option value = "none">None</option>
+        <option value = "vegan">Vegan</option>
+        <option value = "vegetarian">Vegetarian</option>
+      </select>
+      <br>
+      <br>
+      <input class = "button" type = "submit" value = "Search Recipes">
+    </form>
+  </section>
 
-    <section id = "about">
-      <br>
-      <h2>About</h2>
-      <br>
-      <br>
-      <p>Welcome to Dish Discovery, your ultimate destination for personalized food recipes. We understand that finding the perfect recipe can be a challenging task, especially when you're looking for something specific. Hopefully we can make that hurdle easier and your culinary journey more enjoyable.</p>
-      <br>
-      <ul title = "What Sets Us Apart?">
-        <li><strong>Food: </strong>We believe that your cravings should always take center stage. In the "Recipe" box, you can input the ingredients you'd like to include in your recipe.</li>
-        <li><strong>Exclude Ingredients: </strong>We understand that dietary restrictions, allergies, or simply personal preferences may lead you to exclude certain ingredients from your meals. In the "Exclude Ingredients" box, you can specify what you'd like to avoid, ensuring that the recipes we suggest are tailored to your needs.</li>
-        <li><strong>Diet: </strong>Maintaining a specific diet, whether it's vegetarian, vegan, keto, paleo, or any other, is a commitment that deserves respect. With our "Diet" option, you can filter recipes that align with your dietary goals. </li>
-      </ul>
-      <br>
-      <h3>Start Exploring and Let's Get Cooking Today!</h3>
+    <!-- About Section-->
+  <section id = "about">
+    <br>
+    <h2>About</h2>
+    <br>
+    <br>
+    <p>Welcome to Dish Discovery, your ultimate destination for personalized food recipes. We understand that finding the perfect recipe can be a challenging task, especially when you're looking for something specific. Hopefully we can make that hurdle easier and your culinary journey more enjoyable.</p>
+    <br>
+    <ul title = "What Sets Us Apart?">
+      <li><strong>Food: </strong>We believe that your cravings should always take center stage. In the "Recipe" box, you can input the ingredients you'd like to include in your recipe.</li>
+      <li><strong>Exclude Ingredients: </strong>We understand that dietary restrictions, allergies, or simply personal preferences may lead you to exclude certain ingredients from your meals. In the "Exclude Ingredients" box, you can specify what you'd like to avoid, ensuring that the recipes we suggest are tailored to your needs.</li>
+      <li><strong>Diet: </strong>Maintaining a specific diet, whether it's vegetarian, vegan, keto, paleo, or any other, is a commitment that deserves respect. With our "Diet" option, you can filter recipes that align with your dietary goals. </li>
+    </ul>
+    <br>
+    <h3>Start Exploring and Let's Get Cooking Today!</h3>
   
-    </section>
+  </section>
 
-    <section id = "search-results">
-      <br>
-      <h2>Recipes</h2>
-      <div id = "results">
-        <p id="noRecipesMessage">You currently have no recipes.</p>
-        <div class="result-box-container"></div>
-      </div>
-  
-    </section>
-    <script src = "script.js"></script>
+  <!-- Recipe Results Section-->
+  <section id = "search-results">
+    <br>
+    <h2>Recipes</h2>
+    <div id = "results">
+      <p id="noRecipesMessage">You currently have no recipes.</p>
+      <div class="result-box-container"></div>
+    </div>
+
+  </section>
+
+  <script src = "script.js"></script>
+
 </body>
 
 <footer>
   <p id = "footNote">My First Web Development</p>
 </footer>
+
 </html>
