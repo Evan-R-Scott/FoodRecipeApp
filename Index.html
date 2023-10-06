@@ -8,16 +8,14 @@
   <title>Dish Discovery</title>
   <link rel="stylesheet" href="Style.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Space+Mono&display=swap" rel="stylesheet">
-  <script src = "script.js"></script>
 
 </head>
 
 <body>
   <nav>
-    <a href = "#history">History</a>
     <a href = "#search-results">Recipes</a>
-    <a href = "#searchSection">Discover</a>
     <a href = "#about">About</a>
+    <a href = "#searchSection">Discover</a>
     <a href = "#home">Home</a>
     <label class = "siteName">Dish Discovery</label>
   </nav>
@@ -26,6 +24,29 @@
       <h1>Dish Discovery</h1>
 
       <h4>Search recipes from all over the world</h4>
+    </section>
+
+    <section id = "searchSection">
+      <br>
+      <h2>Discover</h2>
+      <form id = "searchForm">
+        <input id = "recipe-search-box" type = "text" placeholder="Enter a recipe or ingredient">
+        <br>
+        <br>
+        <label for = "ingredients">Exclude Ingredient:</label>
+        <input name = "ingredients" id = "ingredient-search-box" type = "text" placeholder="Coconut, Onion, Garlic">
+        <br>
+        <br>
+        <label for = "diet">Diet:</label>
+        <select id = "search-box" name = "diet">
+          <option value = "none">None</option>
+          <option value = "vegan">Vegan</option>
+          <option value = "vegetarian">Vegetarian</option>
+        </select>
+        <br>
+        <br>
+        <input class = "button" type = "submit" value = "Search Recipes">
+      </form>
     </section>
 
     <section id = "about">
@@ -45,44 +66,19 @@
   
     </section>
 
-    <section id = "searchSection">
-      <br>
-      <h2>Discover</h2>
-      <form action ="">
-        <input class = "recipe-search-box" type = "text" placeholder="Enter a recipe or ingredients">
-        <br>
-        <br>
-        <label for = "ingredients">Exclude Ingredients:</label>
-        <input name = "ingredients" class = "ingredient-search-box" type = "text" placeholder="Coconut, Onion, Garlic">
-        <br>
-        <br>
-        <label for = "diet">Diet:</label>
-        <select class = "search-box" name = "diet">
-          <option value = "none">None</option>
-          <option value = "vegan">Vegan</option>
-          <option value = "vegetarian">Vegetarian</option>
-        </select>
-        <br>
-        <br>
-        <input class = "button" type = "submit" value = "Submit">
-      </form>
-    </section>
-
     <section id = "search-results">
       <br>
       <h2>Recipes</h2>
+      <div id = "results">
+        <p id="noRecipesMessage">You currently have no recipes.</p>
+        <div class="result-box-container"></div>
+      </div>
   
     </section>
-
-    <section id = "history">
-      <br>
-      <h2>Previous Recipes</h2>
-    
-    </section>
-
+    <script src = "script.js"></script>
 </body>
 
 <footer>
-  <p>Fun Guy making a Fun Project :D</p>
+  <p id = "footNote">My First Web Development</p>
 </footer>
-</html>q
+</html>
